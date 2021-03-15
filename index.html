@@ -5,68 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Class</title>
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .cont{
+            background-color: antiquewhite !important;
+        }
+    </style>
 </head>
 <body>
 
-    <header class="head">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#faq">FAQ 2</a></li>
-        </ul>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
 
-    <main>
-        <section>
-            <div class="boxes">
-                <div class="box box-a">
-                    <div class="box-img">
-                        <img src="img/1.jpg" alt="">
-                    </div>
-                    <div class="box-content">
-                        <h3>HTML 5</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet.
-                        </p>
-                        <button>Read More</button>
-                    </div>
+
+
+      
+
+   <div class="container bg-primaryx mt-5">
+       <div class="row">
+           <div class="col-md-4">
+              <div class="card bg-danger text-center text-white">
+                  <div class="card-header">
+                      <h4>Welcome!</h4>
+                  </div>
+                  <div class="card-body">
+                      <h3>My Details</h3>
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolor voluptate quam quidem qui? Explicabo at blanditiis neque alias a.
+                      </p>
+                  </div>
+                  <div class="card-footer">
+                      <p>Thank You</p>
+                  </div>
+              </div>
+           </div>
+
+           <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="img/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
+              </div>
+         </div>
 
-                <div class="box box-b">
-                    <div class="box-img">
-                        <img src="img/1.jpg" alt="">
-                    </div>
-                    <div class="box-content">
-                        <h3>Css 3</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet.
-                        </p>
-                        <button>Read More</button>
-                    </div>
+         <div class="col-md-4">
+            <div class="card bg-success text-white">
+                <div class="card-header">
+                    <h4>Welcome!</h4>
                 </div>
-
-                <div class="box box-c">
-                    <div class="box-img">
-                        <img src="img/1.jpg" alt="">
-                    </div>
-                    <div class="box-content">
-                        <h3>Javascript</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet.
-                        </p>
-                        <button>Read More</button>
-                    </div>
+                <div class="card-body">
+                    <h3>My Details</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolor voluptate quam quidem qui? Explicabo at blanditiis neque alias a.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <p>Thank You</p>
                 </div>
             </div>
-        </section>
-    </main>
+         </div>
 
-    <footer >
-        <p>Copyright &copy; 2021</p>
-    </footer>
+           
+
+<!-- 
+        <div class="col-md-8 p-4 bg-success">
+            <form action="">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="">First Name</label>
+                              <input type="text" placeholder="First Name" class="form-control">
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="">Last Name</label>
+                            <input type="text" placeholder="Last Name" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                         <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" placeholder="Enter Email" name="" id="" class="form-control">
+                         </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" placeholder="Password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">COnfirm Password</label>
+                          <input type="password" placeholder="COnfirm Password" class="form-control">
+                      </div>
+                    </div>
+                  </div> 
+                  
+                  <button class="btn btn-block btn-primary">Submit</button>
+            </form>
+        </div> -->
+       </div>
+   </div>
+    
+   
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
     
 </body>
 </html>
