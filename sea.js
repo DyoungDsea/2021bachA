@@ -1,52 +1,43 @@
 
+var person = {
+    firstName:"Young",
+    lastName: "Elefiku",
+    myAge: 23,
+    myColor:"Blue",
+    fullName:function(){
+        return "My name is " + this.firstName + " and am " + this.myAge + "years old";
+    }
+};
+
+// object constructor
+function Person(firstName, lastName, myAge, myColor) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.myAge = myAge;
+    this.myColor = myColor;
+}
+
+// class Cars{
+//     constructor(carName, carModel, gearType, carColor){
+//         this.name = carName,
+//         this.model = carModel,
+//         this.gear = gearType,
+//         this.color = carColor
+//     }
+// }
+
+// class subCars extends Cars{
+    
+// }
+
+var venza = new Cars("Venza", "2021", "Auto", "cyan");
+var range = new Cars("Range", "2021", "Auto", "pink");
+var lexus = new Cars("Lexus", "2021", "Auto", "lightgrey");
 
 
 
-        var a=2, b=1, c=-1;
-        var insideSqrt = (Math.pow(b, 2) - 4 * a * c);
-        var x1, x2;
-
-        x1 = (- b + Math.sqrt(insideSqrt))/ 2 * a;
-        x2 = (- b - Math.sqrt(insideSqrt))/ 2 * a;
-
-
-        function solveQuad(a, b, c){
-            var insideSqrt = (Math.pow(b, 2) - 4 * a * c);
-            var x1, x2;
-            x1 = (- b + Math.sqrt(insideSqrt))/ 2 * a;            
-            x2 = (- b - Math.sqrt(insideSqrt))/ 2 * a;
-            return "The X1 = " + Math.floor(x1) + " X2 = " + Math.floor(x2);
-        }
-
-        // solveQuad(2, 1, -1);
-
-        var cars = ["Venza", "camry", "Honda", "Range"];
-
-
-        cars.forEach(function (e){
-            console.log(e);
-        });
-  
-
-        cars.forEach(loopArray);
-
-        function loopArray(e){
-            console.log(e);
-        }
-
-        function deleteArray(arrayIndex){
-            delete arrayIndex;
-        }
-
-        deleteArray(ball[1]);
-
-        function myDetails(fullname, age){
-            console.log("My name is "+ fullname +" and my age is "+ age);
-        }
-        // solveQf(2, -1, 5);
-      myDetails("Young Elefiku", 23);
-      myDetails("Emmanuel", 33);
-      myDetails("Uche", 35);
-      myDetails("Ken", 31);
-
-        // sumForMe();
+var young = new Person("Young", "Elefiku", 23, "blue");
+var ken = new Person("Ken", "Turkey", 33, "black");
+var emmy = new Person("Emmy", "Job", 34, "red");
+var uche = new Person("Uche", "9ja", 35, "pink");
+var hamp = new Person("Hamp", "Togo", 19, "yellow");
